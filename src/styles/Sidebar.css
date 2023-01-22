@@ -1,0 +1,62 @@
+.container {
+    flex: 1;
+    background-color: #283046;
+    color: white;
+    height: 90vh;
+    padding: 10px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #625BC9;
+    margin-left: 10px;
+}
+
+.component-section {
+    margin: 10px 0;
+}
+
+.component {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.selected-component, .component:hover {
+    background-color: #625BC9;
+    border-radius: 10px;
+}
+
+.top-section, .logo-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.close-icon {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .container {
+        background-color: #283046;
+        color: white;
+        height: 100vh;
+        padding: 10px;
+    }
+    .sidebar-text, .title {
+        display: none;
+    }  
+    .close-icon {
+        margin-left: 10px;
+    }
+}

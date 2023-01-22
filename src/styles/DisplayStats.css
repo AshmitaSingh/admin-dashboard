@@ -1,0 +1,43 @@
+.main{
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(3, 33.3%);
+    padding: 1.5rem 1.8rem;
+    background-color: #283046;
+    color: white;
+}
+
+.stats-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat {
+    display: flex;
+}
+
+.stats-data {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.icons {
+    border-radius: 50%;
+    padding: 8px 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.uninstalled {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .main{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }   
+}

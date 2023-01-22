@@ -1,0 +1,92 @@
+.table {
+    color: white;
+    height: 400;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 5px;
+}
+
+.data-range {
+    display: flex;
+    gap: 6px;
+}
+
+.duration {
+    background-color: #283046;
+    color: white;
+    padding: 0 50px 0 10px;
+    border-radius: 3px;
+    outline: 1px solid gray;
+    border: none;
+    cursor: pointer
+}
+
+.date-range {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: scroll;
+    width: 20%;
+    background-color: #161D32;
+    color: black;
+    position: absolute;
+    left: 60%;
+}
+.datepicker-popper {
+    
+}
+
+.buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.apply-button {
+    background-color: #625BC9;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer
+}
+.cancel-button {
+    background-color: #283046;
+    color: gray;
+    padding: 8px 12px;
+    border-radius: 3px;
+    outline: 1px solid gray;
+    border: none;
+    cursor: pointer
+}
+
+@media (max-width: 767px) {
+    .table {
+        height: 400;
+        width: 92%;
+        margin-bottom: 20px;
+    } 
+    .headers {
+        display: flex;
+        flex-direction: column;
+    }
+    .duration {
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+    .date-range {
+        width: 100vw;
+        left: 40%;
+    }   
+    .apply-button, .cancel-button {
+        padding: 6px 8px;
+        font-size: x-small;
+    }
+}

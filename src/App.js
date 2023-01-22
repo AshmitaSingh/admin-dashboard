@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import MainContent from './components/contents/MainContent';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import logo from './assets/wowtalent.png';
 
 function App() {
+  const [close, setClose] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {close ? 
+      <div className="hamburger-option">
+        <img className="company-logo" src={logo} alt="logo" />
+        <span className="icon" onClick={() => setClose(false)}><MenuOpenIcon /></span>
+      </div> 
+      : <Sidebar setClose={setClose}/>}
+      <MainContent />
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.date-range {
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    height: 40vh;
+    overflow-y: scroll;
+    width: 30vw;
+    font-size: xx-small;
+}
